@@ -1,42 +1,44 @@
-// Printing
+/* Printing */
 
-// console.log("Hii");     // gives a new line
-// console.log("Aditya");
+// console.log("Hii");      // Hii     // gives a new line
+// console.log("Aditya");   // Aditya
 
 // process.stdout.write("chai");   // does not give new line
-// process.stdout.write("chai");
+// process.stdout.write("chai");    // chaichai
 
-// console.table("test");
-// console.table({ city : "Bhopal"});
+// console.table("test");       // test
+// console.table({ city : "Bhopal"});       // table output
 
-// console.warn({ city : "Bhopal"});
+// console.warn({ city : "Bhopal"});    // fancy printing with colors
 
-// Datatypes
+/* Datatypes */
 
-// String
-// Number 
-// Boolean
-// Bigint 
+// 1. String
+// 2. Number 
+// 3. Boolean
+// 4. Bigint 
 
-// Undefined : no definition
-// Null : empty
+// 5. Undefined : no definition present
+// 6. Null : empty (not  zero)
 
-// Object
+// 7. Object
 
-// Symbol
+// 8. Symbol
+
+/* Variable */ 
 
 // var score = 102  // old way
 // let score = 102;    // new way
 // let name = "Aditya";    // string
 // let isLoggedin = false;    // bool
 
-// let teaTypes = ["lemon tea", "orange tea", "oolong tea"]    // object
-// let user = {firstname: "aditya", lastname: "giri"}  // object
+// let teaTypes = ["lemon tea", "orange tea", "oolong tea"]    // object : array
+// let user = {firstname: "aditya", lastname: "giri"}  // object : 
 
 // let getScore = score;
 // console.log(getScore);
 
-// Changes
+/* Changes */
 
 // let gameName = "spiderman";
 // gameName = "batman";
@@ -44,9 +46,9 @@
 
 // const userName = "adityadotcom";    // const variables cannot be changed
 // userName = "aditya";
-// console.log(userName);
+// console.log(userName);       // TypeError: Assignment to constant variable
 
-// Operations
+/* Operations */
 
 // let score = 102;
 // let bonus = 25;
@@ -67,22 +69,22 @@
 // credits--
 // --credits
 
-// Comparisons
+/* Comparison operations */
 
 // let num1 = 3
 // let num2 = 3
 // let num3 = 6
 
-// console.log(num1 == num2)   // comparison operator
-// console.log(num1 != num3)   
-// console.log(num1 > num3)   
-// console.log(num1 < num3)   
+// console.log(num1 == num2)   // true  // comparison operator
+// console.log(num1 != num3)   // true
+// console.log(num1 > num3)    // false
+// console.log(num1 < num3)    // true
 
-// Logical operators
+/* Logical operators */
 
-// && and : both conditions should be true
-// || or : either one condition should be true
-// ! reverse
+// && (and) : both conditions should be true
+// || (or) : either one condition should be true
+// ! (reverse)
 
 // let isLoggedin = true;
 // let isPaid = false;
@@ -92,33 +94,34 @@
 // let isGoogleUser = false;
 // console.log(isEmailUser || isGoogleUser);
 
-// Assignment operation
+/* Assignment operation */
 
 // let score = 10 + 11     // assigning a value
 // let num1 = 10;  
-// // num1 = num1 + 5;
+// num1 += 5;      // num1 = num1 + 5;
 // num1 -= 5;      // another way of assigning a value
 // num1 *= 5;      
 // num1 /= 5;      
 // num1 %= 5;  
 
-// Operator precedence
+/* Operator precedence */
 
 // let score = 2 * 3 + 2 - 1;      // bad practice
 // let score = ((2 * (3 + 2)) - 1);      // good practice
 
-// Data types
+/* Data types */
 // 1. Primitve : String, Boolean, Number, Null, Undefined, Symbol
 // 2. Non-Primitve : Objects -> (Array, Functions, Objects)
 
-// 1. Primitive data type
-// Numbers
+/* 1. Primitive data type */
+
+// a. Numbers
 // let balance = 120;
-// console.log(typeof(balance));
-// console.log(typeof balance);
+// console.log(balance);    
+// console.log(typeof(balance));   // typeof is a method, so use ()
 
 // let balance = 120;
-// let anotherBalance = new Number(120)    // not a good idea to design a new Number
+// let anotherBalance = new Number(120)    // advance datatype     // not a good idea to design a new Number
 // console.log(balance);   // 120
 // console.log(anotherBalance);    // [Number: 120]
 // console.log(anotherBalance.valueOf());  // 120
@@ -126,11 +129,11 @@
 // console.log(typeof balance);    // number
 // console.log(typeof anotherBalance); // object
 
-// Boolean
+// b. Boolean
 // let isActive = true;
 // let isReallyActive = new Boolean(true);     // Not recommended
 
-// Null and Undefined
+// c. Null  d. Undefined
 // let firstName;   // if we comment this line and run second line alone, then it is NULL: not defined
 // console.log(firstName);     // undefined
 
@@ -139,21 +142,21 @@
 // console.log(firstName);   
 // console.log(lastName);   
 
-// String
+// e. String
 // let myString = "Hello";
 // let userName = 'Aditya';
 // let greetMessage = `Hello`;
 
 // let oldGreet = myString + "Aditya";     // no space between strings
-// console.log(oldGreet);
+// console.log(oldGreet);                  // HelloAditya
 
 // let newGreet = `Hello ${userName} !`    // inject as many variables as you want and can format also
-// console.log(newGreet);      // known as String Interpolation
+// console.log(newGreet);                  // known as String Interpolation
 
 // let demoOne = `Value is ${2 * 2}`;      // can also do computation
 // console.log(demoOne);
 
-// Symbol: An object that returns a symbol and guarantees a unique value
+// f. Symbol: An object that returns a symbol and guarantees a unique value
 // let sm1 = Symbol();
 // let sm2 = Symbol();
 // console.log(sm1);    // Symbol()
@@ -166,32 +169,34 @@
 // console.log(sm2);
 // console.log(sm1 == sm2);    // false
 
-// 2. Non primitive data type
-// Object: Larger space of memory is reserved 
+/* 2. Non primitive data type */
+
+// a. Object: Larger space of memory is reserved 
 // let obj = {}    // {} this is a valid object
-// console.log(obj);
-// console.log(typeof obj);
+// console.log(obj);            // {}
+// console.log(typeof obj);     // object
 
 // let username = { 
 //     firstName: "aditya",
 //     isLogggedIn: true,
-// }
+// };
 // console.log(username);
 // console.log(typeof username);
 
-// const username = {      // only the block of memory cannot be changed 
+// const username = {          // only the block of memory cannot be changed 
 //     firstName: "aditya",    // but can change the values inside the object
 //     isLogggedIn: true,      // primitives inside object can be changed
 // }
-// a) Accessing primitve under an object using dot(.)
-// console.log(username.firstName);    // accessing primitve under an object using dot(.)
-// username.firstName = "kishan";    // changing the value of primitve and not the memory alloted to the object
-// username.lastName = "giri";    // adding more primitve values under the object
-// console.log(username.firstName);
-// console.log(username.lastName);
-// console.log(username);
 
-// b) Accessing spaced primitve under an object using square brackets([])
+// i) Accessing primitve under an object using dot(.)
+// console.log(username.firstName);    // accessing primitve under an object using dot(.)
+// username.firstName = "kishan";      // changing the value of primitve and not the memory alloted to the object
+// username.lastName = "giri";         // adding more primitve values under the object
+// console.log(username.firstName);    // kishan
+// console.log(username.lastName);     // giri
+// console.log(username);              // { firstName: 'kishan', isLogggedIn: true, lastName: 'giri' }
+
+// ii) Accessing spaced primitve under an object using square brackets([])
 // const username = {       
 //     "first Name": "aditya",     // can add a space in the data type
 //     isLogggedIn: true,  
@@ -201,40 +206,42 @@
 // console.log(username.lastName);
 // console.log(username);
 
-// Date
+// b. Date
 // let today = new Date();
-// console.log(today);     // 2025-02-10T03:31:07.665Z : not usable
+// console.log(today);             // 2025-02-10T03:31:07.665Z : not usable
 // console.log(today.getDate());   // 10
 
-// Array
+// c. Array
 // let heroes = ["a", "b", "c", true]      // in JS different data types are allowed
 // let anotherUser = ["aditya",  true];
 // console.log(anotherUser[0]);
 
-// Type conversion
+/* Type conversion */
+
 // console.log(1 + '1');   // implicit type conversion in JS : dont rely on this
 
-// let isValue=true;
-// console.log(isValue + 1);
-// console.log(Number(isValue));   // explicit type conversion in JS
+// let isValue = true;
+// console.log(isValue + 1);       // 2
+// console.log(Number(isValue));   // 1     // explicit type conversion in JS
 
 // let value="2";
-// console.log(Number(value));
-// console.log(typeof Number(value));
+// console.log(Number(value));          // 2
+// console.log(typeof Number(value));   // number
 
 // let value="2abc";
-// console.log(Number(value));     //NaN : Not a Number
-// console.log(typeof Number(value));      // NaN is also a type of number
+// console.log(Number(value));          // NaN : Not a Number
+// console.log(typeof Number(value));   // number    // NaN is also a type of number
 
-// console.log(Number(null));      // 0
-// console.log(Number(undefined));     // NaN
+// console.log(Number(null));       // 0
+// console.log(Number(undefined));  // NaN
 
 // **JS dont have predefined data types, JS checks all the types on the go (dynamically)
 // JS is dynamically typed language
 // Java, C++ are statically typed language
 // Typescript is JS with types
 
-// Conditionals
+/* Conditionals */
+
 // Challenge 1: Checking if a number is greater than another number
 // let num1 = 5;
 // let num2 = 8;
@@ -261,7 +268,7 @@
 // let score = 44;     // number
 // let value = "44";   // string
 
-// if(typeof score === "number"){
+// if(typeof score === "number"){               // use === to check even the type of variation is same
 //     console.log("Yep, this is a number");
 // }
 // else{
@@ -288,13 +295,14 @@
  
 // Challenge 6: Checking if an array is empty or not
 // let items = ["item1"];
-// console.log(items.length); 
+// console.log(items.length);                               // 1
 // if(items.length === 0) console.log("Array is empty");
 // else console.log("Array is not empty");
 
 /* Ten challenges */
+
 /* 1. Declare an array named 'teaflavours' that contains the 
-strings 'greeb tea', 'black tea' and 'oolong tea'.
+strings 'green tea', 'black tea' and 'oolong tea'.
 Access the first element of the array and store it 
 in a variable named 'firstTea'. */
 
@@ -313,26 +321,26 @@ variable named 'favouriteCity'. */
 // const favouriteCity = cities[2];
 // console.log(favouriteCity);
 
-/* 3: Change second element of the array*/
+/* 3. Change second element of the array*/
 // let teaTypes = ["herbal tea", "white tea", "masala cahi"];
 // teaTypes[1] = "jasmine tea";
 // console.log(teaTypes);
 
-/* 4: Add an element to array using 'push' method */ 
+/* 4. Add an element to array using 'push' method */ 
 // let citiesVisited = ["Mubai", "Sydeny"];
-// // citiesVisited[2] = "Berlin";    // 1st way
+// // citiesVisited[2] = "Berlin";                    // 1st way
 // // citiesVisited[citiesVisited.length] = "Berlin"; // 2nd way
-// citiesVisited.push("Berlin");   // 3rd way
+// citiesVisited.push("Berlin");                      // 3rd way
 // console.log(citiesVisited);
 
-/* 5 */ 
+/* 5. Remove the last element of the array using 'pop' method and store it in a variable*/ 
 // let teaOrders = ["chai", "iced tea", "matcha", "earl grey"];
 // // const lastOrder = teaOrders.pop(teaOrders.length);  // dont need to give anything inside ()
-// const lastOrder = teaOrders.pop();  // pop() automatically goes to last element in the array
+// const lastOrder = teaOrders.pop();                     // pop() automatically goes to last element in the array
 // console.log(teaOrders);
 // console.log(lastOrder);
 
-/* 6: Create a softcopy of the array */
+/* 6. Create a softcopy of the array */
 // let popularTeas = ["green tea", "oolong tea", "chai"];
 // let softCopyTeas = popularTeas;
 // popularTeas.pop();
@@ -344,7 +352,7 @@ variable named 'favouriteCity'. */
 // var1 = 9;
 // console.log(var2);  // 5: usual behavior(different from arrays)
 
-/* 7: Create a hardcopy of an array*/
+/* 7. Create a hardcopy of an array*/
 // let topCities = ["Berlin", "Singapore", "New york"];
 // let hardCopyCities = [...topCities];    // 1st way: using Rest and Spread operators
 // // let hardCopyCities = topCities.slice();    // 2nd way: less used
@@ -352,43 +360,45 @@ variable named 'favouriteCity'. */
 // console.log(hardCopyCities);    // dont show the changes: separate copy
 // console.log(topCities);
 
-/* 8 Merge 2 arrays into one array */
+/* 8. Merge 2 arrays into one array */
 // let europeanCities = ["Paris", "Rome"];
 // let asianCities = ["Tokyo", "Bangkok"];
 // 1st way
 // let worldCities = europeanCities + asianCities; // String
-// console.log(worldCities);
-// console.log(typeof worldCities);    // String and not an array
+// console.log(worldCities);                       // Paris,RomeTokyo,Bangkok
+// console.log(typeof worldCities);                // String and not an array
 
 //2nd way
 // let worldCities = [europeanCities, asianCities];    // arrays in an array
-// console.log(worldCities);  // [ [ 'Paris', 'Rome' ], [ 'Tokyo', 'Bangkok' ] ]
+// console.log(worldCities);                           // [ [ 'Paris', 'Rome' ], [ 'Tokyo', 'Bangkok' ] ]
 
 // ***3rd way***
 // let worldCities = europeanCities.concat(asianCities);
-// console.log(worldCities);
+// console.log(worldCities);           // ["Paris", "Rome", "Tokyo", "Bangkok"]
 
-/* 9: Find length of the array and store it in a variable */
+/* 9. Find length of the array and store it in a variable */
 // let teaMenu = ["masala chai", "oolong tea", "green tea", "earl grey"];
 // const menuLength = teaMenu.length;
 // console.log(menuLength);
 
-/* ***10***: Check if an element is in array or not? */
+/* ***10.*** Check if an element is in array or not? */
 // let cityBucketList = ["Kyoto", "London", "Cape town", "Vancouver"];
 // let isLondonInList = cityBucketList.includes("London");     // includes(""); only works with true or false only
-// console.log(isLondonInList);
+// console.log(isLondonInList);                                // true
 
-// **shift: removes the first element 
-// **unshift: injects elements at the start of array
+/* shift: removes the first element */
+/* unshift: injects elements at the start of array */
+
 // const arrray1 = [1, 2, 3];
-// console.log(arrray1.shift());
-// console.log(arrray1);   // output: [2, 3]
+// console.log(arrray1.shift());    // 1
+// console.log(arrray1);            // output: [2, 3]
 
 // const array2 = [1, 2, 3];
-// console.log(array2.unshift(4,5));
-// console.log(array2);   // output: [4, 5, 1, 2, 3]
+// console.log(array2.unshift(4,5));    // 5
+// console.log(array2);                 // output: [4, 5, 1, 2, 3]
 
-// Loops:
+/* Loops */
+
 // entry----> condition -----> set of instructions
 //             |  |      true           |
 //        false|  |   check again       |
@@ -399,7 +409,8 @@ variable named 'favouriteCity'. */
 // 2. termination condition
 // 3. body of loop
 
-// Types of loops:
+/* Types of loops */
+
 // 1. while
 // 2. do/while
 // 3. for
@@ -436,7 +447,7 @@ in an array named 'teaCollection'   */
 // let favouriteTeaType;
 // do{    
 //     favouriteTeaType = prompt(`Enter your favourite tea (type "stop" to finish)`);
-//     if(favouriteTeaType != "stop"){     // bcoz of do while loop, for first input check for "stop"
+//     if(favouriteTeaType != "stop"){     // bcoz of do while loop, for first input also check for "stop"
 //         teaCollection.push(favouriteTeaType);
 //     }
 // } while (favouriteTeaType != "stop");
@@ -530,11 +541,12 @@ previous cities populations in a new object named 'cityNewPopulation'. */
 //     "New york": 8400000,
 //     Paris: 2200000,
 //     Berlin: 3500000
-// }
+// };
 // let cityNewPopulation = {}
 // // console.log(typeof citiesPopulation);   // object
 // // console.log(Object.keys(citiesPopulation));     // gives all the keys of an object 
 // // console.log(Object.values(citiesPopulation));     // gives all the values of an object 
+
 // for (const city in citiesPopulation) {     // loops through every single key in an object, order is not important in object
 // //  if (Object.prototype.hasOwnProperty.call(object, key)) {    // no use
 // //      const element = object[key];       
@@ -561,7 +573,7 @@ and store the rest in a new object named 'largeCities'. */
 //     if(worldCities[city] < 3000000) continue;
 //     largeCities[city] = worldCities[city];
 // }
-// console.log(largeCities);
+// console.log(largeCities);    // { Sydney: 5000000, Tokyo: 9000000, Berlin: 3500000 }
 
 // forEach loop: I dont have to iterate the elements, that's why they work on particular data structures which have a fixed start and end
 //               foreach() method of array instances executes a provided function once for each element
@@ -585,20 +597,20 @@ in an array named 'availableTeas' */
 // let availableTeas = [];
 // teaCollection.forEach(function(tea){    // each element in the collection would be named as tea at one iteration 
 //     if(tea == "chai"){
-//         // break;       // brea,k works only in loop, not in function's scope
+//         // break;       // break works only in loop, not in function's scope
 //         return;     // used for functions
 //     }    
 //     availableTeas.push(tea);     // 4 functions are fired, and only 3rd function is returned 
 // });
-// console.log(availableTeas);
+// console.log(availableTeas);      // [ 'earl grey', 'green tea', 'oolong tea' ]
 
 /* 8. Write a foreach loop that iterates thorugh the array
 ["Berlin", "Tokyo", "Sydney", "Paris"]. Skip "Sydeny" and store the other
-cities in a new array named 'traveCities. */
+cities in a new array named 'travelCities. */
 // let worldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
 // let travelCities = [];
 // worldCities.forEach(function(city){     // OR ((city) => {});
-//     if(city == "Sydney") return;        // only Sydney function is returned, not the function of Paris
+//     if(city == "Sydney") return;        // only 'Sydney' function is returned, not the function for 'Paris'
 //     travelCities.push(city);
 // });
 // console.log(travelCities);
@@ -612,7 +624,7 @@ in a new array 'doubledNumbers'. */
 //     if(numbers[i] == 7) continue;
 //     else doubledNumbers.push(numbers[i]*2);
 // }
-// console.log(doubledNumbers); 
+// console.log(doubledNumbers);    // [ 4, 10, 18 ]
 
 /* 10. Use a for-of loop to iterate through the array
 ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"] and
@@ -624,10 +636,11 @@ Store the teas iterated over in an array named 'shortTeas'. */
 //     if(tea.length > 10) break;
 //     else shortTeas.push(tea);
 // }
-// console.log(shortTeas);
+// console.log(shortTeas);     // [ 'chai', 'green tea', 'black tea' ]
 
-// Functions:
-// function greet(name){       // () -> placeholder and name -> parameter
+/* Functions */
+
+// function greet(name){       // () -> placeholder and 'name' -> parameter
 //     return `Hello ${name}`;
 // }
 // let result = greet("aditya");        // argument is passed
@@ -671,20 +684,20 @@ in a variable named `totalCost`. */
 // let totalCost = calculateTotal(499, 100);
 // console.log(totalCost);
 
-// this keyword: this is a context
+/* this keyword: this is a context */
 
 // function testOne(){
 //     console.log(this);
 // }
-// testOne();
+// testOne();       // in browser gives the 'Window object'
 
-// const testTwo = () => {      // Arrow func does have the ability to reach out 'this' 
+// const testTwo = () => {      // Arrow func does have the 'this' context
 //     console.log(this);       // but it doesn't have the ability to pass on 'this' context anywhere
 // }                            // There is not enough ability in 'this' in the arrow function   
 // testTwo();
 
-// Higher order function: Anything that takes function as a parameter or returns a function back is HOF.
-// eg. for-each loop takes func as a parameter
+/* Higher order function: Anything that takes function as a parameter or returns a function back is HOF.
+   eg. for-each loop takes func as a parameter */
 
 /* 4. Write a function named 'processTeaOrder' that takes another
 function, 'makeTea', as a parameter and calls it with the argument
@@ -696,7 +709,7 @@ function, 'makeTea', as a parameter and calls it with the argument
 //     return teaFunction("earl grey");    // returning a function with a special parameter
 // }
 // let order = processTeaOrder(makeTea);   // passing function as a parameter
-// console.log(order);
+// console.log(order);                     // makeTea: earl grey
 
 // Whenever you create a function, all the inner functions 
 // have an access to whatever we design in the outer function.
@@ -712,16 +725,16 @@ function in a variable named 'teaMaker' and call it with '"green tea"'. */
 //     };
 // }
 
-// let teaMaker = function("green tea");     // my logic
-// console.log(teaMaker);
+// // let teaMaker = function("green tea");     // my logic
+// // console.log(teaMaker);
 
-// let teaMaker = createTeaMaker();        // hitesh logic (error): teaMaker is not a function
-// console.log(teaMaker);      // teaMaker holds the definition of a function: [Function (anonymous)]
-// console.log(teaMaker());      // Making undefined: because didnot passed anything
+// let teaMaker = createTeaMaker();     // hitesh logic (error): teaMaker is not a function
+// // console.log(teaMaker);         // teaMaker holds the definition of a function: [Function (anonymous)]
+// // console.log(teaMaker());       // Making undefined: because didnot passed anything
 
-// let result = teaMaker("green tea");     // teaMaker is not a variable as it holds the definition of a function
-//                                         // and whoever holds the function definition, we can execute that ()
-// console.log(result);
+// let result = teaMaker("green tea");  // teaMaker is not a variable as it holds the definition of a function
+//                                      // and whoever holds the function definition, we can execute that using ()
+// console.log(result);                 // Making green tea  
 
 
  
